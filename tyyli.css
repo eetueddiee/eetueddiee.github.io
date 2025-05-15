@@ -1,24 +1,48 @@
-/* Reset perusasetukset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    padding: 20px;
+header h1 a {
+    color: white;
+    text-decoration: none;
 }
 
+header h1 a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: Comic, sans-serif;
+    line-height: 1.6;
+    background-color: #df9400;
+    padding: 0;
+    margin: 0;
+}
+
+/* Kuva */
+.bandpic {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    max-width: 1000px;
+    border: 5px solid black;
+}
+
+/* Header */
 header {
-    background-color: #004080;
+    background-color: #df9400;
     color: white;
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid black;
+    /* viiva headerin alaosaan */
 }
 
+/* Navigointi */
 nav ul {
     list-style: none;
     display: flex;
@@ -32,22 +56,37 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 24px;
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
+/* Main (sisältö) */
 main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #eee;
-    text-align: center;
+    background-color: #df9400;
     padding: 10px;
-    margin-top: 30px;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid black;
+    /* viiva mainin alaosaan */
 }
 
-/* Responsiivisuus pienille näytöille */
+/*Article */
+article {
+    background-color: #df9400;
+    padding: 10px;
+    margin: 0px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+/* Responsiivisuus */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -57,4 +96,55 @@ footer {
     nav ul li {
         margin: 10px 0;
     }
+}
+
+/* Form */
+form {
+    background-color: #df9400;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+
+
+}
+
+.lomake {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #df9400;
+
+    border-radius: 10px;
+}
+
+.lomake label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.lomake input,
+.lomake textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.lomake button {
+    background-color: #f7a600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.lomake button:hover {
+    background-color: #e69500;
 }
