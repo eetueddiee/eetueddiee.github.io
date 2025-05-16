@@ -13,9 +13,19 @@ header h1 a:hover {
     text-decoration: underline;
 }
 
+/* Header */
+header {
+    background-color: #df9400;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid black;
+    /* viiva headerin alaosaan */
+}
+
 
 body {
-    font-family: Comic, sans-serif;
+    font-family: 'Comic Sans MS', sans-serif;
     line-height: 1.6;
     background-color: #df9400;
     padding: 0;
@@ -30,16 +40,6 @@ body {
     margin: 0px auto;
     max-width: 1000px;
     border: 5px solid black;
-}
-
-/* Header */
-header {
-    background-color: #df9400;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 5px solid black;
-    /* viiva headerin alaosaan */
 }
 
 /* Navigointi */
@@ -61,7 +61,7 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/* Main (sisältö) */
+/* Main */
 main {
     background-color: #df9400;
     padding: 10px;
