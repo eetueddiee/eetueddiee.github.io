@@ -25,7 +25,7 @@ header {
 
 
 body {
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', sans-serif;
     line-height: 1.6;
     background-color: #df9400;
     padding: 0;
